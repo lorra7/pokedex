@@ -26,15 +26,9 @@ PokemonCard.propTypes = {
 }
 
 function PokemonCard() {
-  const pokemonTrainer = "Laura";
   const pokemon = pokemonList[2];
 
   return (
-    <>
-      <h3>
-        Hello <strong>{pokemonTrainer}</strong> trainer !
-
-      </h3>
       <figure>
         {pokemon.imgSrc != null ? (
           <img src={pokemon.imgSrc} alt={pokemon.name} />
@@ -44,7 +38,6 @@ function PokemonCard() {
 
         <figcaption>{pokemon.name}</figcaption>
       </figure>
-    </>
   );
 }
 
